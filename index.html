@@ -950,6 +950,9 @@ footer { background: var(--ink); padding: 80px 0 0; }
   .donate-inner { grid-template-columns: 1fr !important; gap: 36px; }
   .donate-amounts { gap: 8px; }
   .amount-btn { padding: 12px 16px; font-size: 1rem; }
+  .donate-inner > div:last-child { padding: 24px 16px !important; width: 100% !important; max-width: 100% !important; box-sizing: border-box !important; overflow: hidden !important; }
+  .donate-inner > div:last-child .btn { width: 100% !important; max-width: 100% !important; box-sizing: border-box !important; font-size: 9px !important; padding: 13px 12px !important; letter-spacing: 1.5px !important; white-space: normal !important; text-align: center !important; }
+  givebutter-widget { max-width: 100% !important; overflow: hidden !important; display: block !important; }
 
   /* BLOG */
   .blog { padding: 64px 0; }
@@ -1543,7 +1546,7 @@ footer { background: var(--ink); padding: 80px 0 0; }
 <div class="page-label"><span class="page-label-num">09</span> Donation Page</div>
 <section class="donate" id="donate" style="padding:120px 0;background:var(--cream);">
   <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;">
+    <div class="donate-inner" style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;">
       <div>
         <span class="eyebrow">Give Today</span>
         <h2 class="display-sm" style="margin-bottom:20px;">Your gift<br><em>changes everything.</em></h2>
@@ -1567,13 +1570,13 @@ footer { background: var(--ink); padding: 80px 0 0; }
           🔒 256-bit SSL Encrypted &nbsp;·&nbsp; ✅ 501(c)(3) Tax Deductible &nbsp;·&nbsp; 📋 EIN Verified
         </div>
       </div>
-      <div style="background:white;border:1px solid var(--ink-15);padding:48px;text-align:center;">
+      <div style="background:white;border:1px solid var(--ink-15);padding:32px 24px;text-align:center;overflow:hidden;box-sizing:border-box;width:100%;">
         <span class="eyebrow" style="display:block;text-align:center;margin-bottom:8px;">Donate Securely</span>
         <h3 style="font-family:var(--font-display);font-size:1.6rem;font-weight:300;margin-bottom:8px;">Ready to Give?</h3>
         <p style="font-size:13px;color:var(--ink-70);margin-bottom:28px;">Choose your giving level — one-time or monthly. Every dollar counts.</p>
         <givebutter-widget id="sBXvwp"></givebutter-widget>
         <div style="margin-top:20px;">
-          <a href="https://givebutter.com/untitled-campaign-2u1vpb" target="_blank" rel="noopener" class="btn btn-yellow btn-arrow" style="width:100%;justify-content:center;">Donate Now via GiveButter</a>
+          <a href="https://givebutter.com/untitled-campaign-2u1vpb" target="_blank" rel="noopener" class="btn btn-yellow btn-arrow" style="width:100%;max-width:100%;justify-content:center;box-sizing:border-box;white-space:normal;text-align:center;word-break:break-word;">Donate Now via GiveButter</a>
         </div>
         <p style="font-size:11px;color:var(--ink-40);margin-top:14px;">Secure payment powered by GiveButter · 501(c)(3) verified</p>
       </div>
